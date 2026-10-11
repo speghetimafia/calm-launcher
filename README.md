@@ -8,6 +8,10 @@ A native Android launcher for the **NWD K2501** head unit (Allwinner T507, Andro
 
 *Both images are renders of the HTML mockup in `mockup/`; the app on the unit is pixel-matched to them.*
 
+**Watch the 25-second launch trailer** (a straight-faced keynote parody; every number in it is measured, and the fine print is honest):
+
+[![Watch the trailer](docs/trailer-poster.jpg)](docs/calm-launcher-trailer.mp4)
+
 ## What it does
 - **Now playing is the main thing:** Bluetooth song and artist, FM station and frequency, or the USB track, with an animated tape deck that only moves while music plays.
 - **BT / RADIO / USB keys switch the source and start playing in place**, with no app opening. Prev / Play / Next / Seek work for each source.
@@ -66,4 +70,5 @@ What `install.sh` changes: installs the app; grants it the `SYSTEM_ALERT_WINDOW`
 - Not affiliated with or endorsed by NWD, zlink, Google or Teenage Engineering. Product names belong to their owners. The look is *inspired by* Teenage Engineering's EP-series hardware; no TE artwork or fonts are used.
 - **No vendor code or firmware is included.** Action strings, setting names and AIDL transaction numbers were found by observing the unit's own apps, for interoperability, and are listed in `docs/INTEGRATION.md`. `MusicBean.kt` is a small reimplementation of a data class's wire format, needed to read the USB player's broadcasts.
 - Fonts: [TeX Gyre Heros](https://www.gust.org.pl/projects/e-foundry/tex-gyre) (GUST Font License / LPPL 1.3c) stands in for Helvetica Neue, and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) (SIL OFL 1.1) for the monospace text. Licences are in `launcher/app/src/main/assets/fonts/` and `mockup/fonts/`.
+- Trailer: music is "Happy Beats / Business Moves" by [ende.app](https://ende.app) (CC BY 4.0); sound effects are from [Kenney](https://kenney.nl) (CC0). Made with [Hyperframes](https://hyperframes.heygen.com/).
 - Code: [MIT](LICENSE).
