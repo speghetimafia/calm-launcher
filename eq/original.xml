@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="key_bass_src" value="0" />
+    <int name="key_range_hpt" value="20" />
+    <string name="key_7602_gain">17,17,17,21,24,21,17,18,22,26,21,17,16,15</string>
+    <int name="key_range_lpf" value="20" />
+    <int name="key_fader" value="7" />
+    <int name="key_balance" value="7" />
+    <int name="key_bass_loud" value="0" />
+    <string name="key_7602_qvalue">10,10,10,10,10,10,10,10,10,10,10,10,10,10</string>
+    <string name="key_7602_frequence">0,0,0,0,0,0,0,0,0,0,0,0,0,0</string>
+    <string name="key_eq_type">classic</string>
+</map>

@@ -1,0 +1,6 @@
+/* The fonts the Android launcher actually ships (free lookalikes of Helvetica Neue / SF Mono).
+   Loaded by the mockup so the preview matches the device, and by the asset bake. */
+@font-face{font-family:"Heros";src:url("fonts/texgyreheros-bold.otf");font-weight:100 900}
+@font-face{font-family:"JBMono";src:url("fonts/JetBrainsMono-Bold.ttf");font-weight:100 900}
+.device,.device *{font-family:"Heros",sans-serif!important}
+.device .mono,.device .mono *,.device .seg7,.device .seg7 *{font-family:"JBMono",monospace!important}

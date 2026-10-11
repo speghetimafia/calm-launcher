@@ -1,0 +1,24 @@
+# build output
+build/
+.gradle/
+.kotlin/
+.idea/
+*.iml
+local.properties
+launcher/icon-src.png
+.DS_Store
+
+# signing keys and installable builds: never commit these (publish APKs as GitHub Releases)
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# raw dumps from a head unit contain device serials, Bluetooth/phone names, Wi-Fi details and
+# proprietary vendor firmware: keep them out of this repo
+full_dump/
+raw/
+apks/
+backup/
+*.log
+logcat*
