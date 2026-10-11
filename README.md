@@ -1,12 +1,16 @@
-# Calm: a custom Home screen for an Android car head unit
+# Calm: I hated my car's infotainment screen, so I replaced it
 
-A native Android launcher for the **NWD K2501** head unit (Allwinner T507, Android 10, 1024×600). It puts what's playing in the middle of the screen, a few big physical-looking keys under it, and gets out of the way when Android Auto, a call, or the reverse camera takes over.
+My car has a Chinese-made Android head unit (NWD K2501). It works, but I hated how its stock home screen looked every single time I got in. So I built my own: **a native Android launcher that replaces it**, pixel-matched to a design I made in HTML first.
 
-| Day | Night (headlights on) |
+| Before: the stock home screen | After: Calm |
 |---|---|
-| ![Day](docs/screenshot-day.png) | ![Night](docs/screenshot-night.png) |
+| ![Stock home screen of the head unit](docs/before-stock.jpg) | ![Calm, day theme](docs/screenshot-day.png) |
 
-*Both images are renders of the HTML mockup in `mockup/`; the app on the unit is pixel-matched to them.*
+*Left: the head unit's stock launcher, shown for comparison. Right: a render of the HTML mockup in `mockup/`; the app on the unit is pixel-matched to it.*
+
+It puts what's playing in the middle of the screen, a few big physical-looking keys under it, and gets out of the way when Android Auto, a call, or the reverse camera takes over. At night (headlights on) it switches to a dark theme:
+
+![Calm, night theme](docs/screenshot-night.png)
 
 **Watch the 25-second launch trailer** (a straight-faced keynote parody; every number in it is measured, and the fine print is honest):
 
@@ -68,6 +72,7 @@ What `install.sh` changes: installs the app; grants it the `SYSTEM_ALERT_WINDOW`
 
 ## Legal and credits
 - Not affiliated with or endorsed by NWD, zlink, Google or Teenage Engineering. Product names belong to their owners. The look is *inspired by* Teenage Engineering's EP-series hardware; no TE artwork or fonts are used.
+- The "Before" image is a screenshot of the head unit's stock launcher, shown only for comparison. Its artwork belongs to the vendor.
 - **No vendor code or firmware is included.** Action strings, setting names and AIDL transaction numbers were found by observing the unit's own apps, for interoperability, and are listed in `docs/INTEGRATION.md`. `MusicBean.kt` is a small reimplementation of a data class's wire format, needed to read the USB player's broadcasts.
 - Fonts: [TeX Gyre Heros](https://www.gust.org.pl/projects/e-foundry/tex-gyre) (GUST Font License / LPPL 1.3c) stands in for Helvetica Neue, and [JetBrains Mono](https://www.jetbrains.com/lp/mono/) (SIL OFL 1.1) for the monospace text. Licences are in `launcher/app/src/main/assets/fonts/` and `mockup/fonts/`.
 - Trailer: music is "Happy Beats / Business Moves" by [ende.app](https://ende.app) (CC BY 4.0); sound effects are from [Kenney](https://kenney.nl) (CC0). Made with [Hyperframes](https://hyperframes.heygen.com/).
